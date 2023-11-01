@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogIn</title>
+    <title>Register</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
     <style>
       *{
     margin: 0;
@@ -93,32 +93,34 @@
 .form_fields p a{
     color:rgba(32, 211, 145, 0.396) ;
 }
-/* body{
-  background-image: url('./images/clg.png');
-} */
+
     </style>
 </head>
 <body>
     <section class="login_container flex">
         <div class="container flex">
-            <div class="clgimg">
-                <img src="https://images.unsplash.com/photo-1620496009285-ac853df7b9b6?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
-            </div>
+          <div class="clgimg">
+            <img src="https://images.unsplash.com/photo-1620496009285-ac853df7b9b6?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+        </div>
             <div class="form_fields ">
-               <form action="/login" method="post">
-                <div class="fields ">
-                  <label for="clgname">College Email:</label>
-                  <input type="email" name="email">
-                </div>
-                <div class="fields ">
-                  <label for="clgname">College Password:</label>
-                  <input type="text" name="password">
-                </div>
+               <form action="/" method="post">
+                  <div class="fields ">
+                    <label for="clgname">College Name:</label>
+                    <input type="text" placeholder="Enter College name" name="name">
+                  </div>
+                  <div class="fields ">
+                    <label for="clgname">College Email:</label>
+                    <input type="email" placeholder="Enter Email" name="email">
+                  </div>
+                  <div class="fields ">
+                    <label for="clgname">College Password:</label>
+                    <input type="text" placeholder="Enter password" name="password">
+                  </div>
                   <div class="fields flex">
-                    <button class="logInBtn">LogIn</button>
+                    <button class="logInBtn">Register</button>
                   </div>
                </form>
-               <p>Don't have an acoount? <a href="/register">Register Here</a></p>
+               <p>Already have an account?<a href="/login">Login Here</a></p>
             </div>
         </div>
     </section>

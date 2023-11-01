@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_container{
+    width: 100vw;
+    height: 100vh;   
+}
+.container{
+    width: 60vw;
+    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 3% ;
+    overflow: hidden;
+
+}
+
+.clgimg{
+    width: 45%;
+    height: 100%;
+}
+.clgimg img{
+    width: 80%;
+    height: 80%;
+    animation: animate 1.5s ease;
+    
+}
+@keyframes animate {
+    0%{
+        margin-left:-100px;
+    }
+    100%{
+        margin-left:0px;
+    }
+}
+.form_fields{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+
+}
+.form_fields form{
+    width: 100%;
+    height: 100%;
+}
+.fields{
+    width: 100%;
+    /* height: 35px; */
+    margin: 5px 0;
+    /* border: 2px solid red; */
+}
+.fields input{
+    width: 100%;
+    height: 35px;
+    margin: auto;
+}
+.fields label{
+    display: block;
+    margin: 12px 0;
+    font-size: 20px;
+}
+.logInBtn{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(55deg,rgb(18, 169, 134),rgba(32, 211, 145, 0.396));
+}
+.form_fields p a{
+    color:rgba(32, 211, 145, 0.396) ;
+}

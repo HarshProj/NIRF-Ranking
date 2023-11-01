@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hel</title>
+    <style>
+        body{
+            background: #000;
+            color: white;
+        }
+        .main-div{
+            width: 100%;
+            height: 100vh;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .fields{
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .auth{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .auth div{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="main-div">
+        <div class="fields">fields</div>
+        <div class="auth">
+            <div class="Prediction">predict</div>
+            <div class="Updation"><a href="/login">update</a></div>
+            <div class=""></div>
+        </div>
+    </div>
 </body>
 </html>
