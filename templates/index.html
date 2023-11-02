@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hel</title>
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        body{
-            background: #000;
-            color: white;
-        }
         .main-div{
             width: 100%;
-            height: 100vh;
-            border: 2px solid white;
+            border: 2px solid black;
+            /* border: 2px solid white; */
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            gap: 2rem;
+            /* justify-content: center; */
         }
         .fields{
+            /* border: 2px solid black; */
             width: 60%;
-            height: 80vh;
-            display: flex;
-            align-items: center;
+            /* height: 80vh; */
+            /* display: flex;
+            align-items: center; */
         }
         .auth{
             width: 60%;
@@ -34,16 +34,117 @@
         .auth div{
             width: 100%;
         }
+        table{
+            border: 2px solid black;
+        }
+        table, th, td {
+  border:1px solid black;
+}
     </style>
 </head>
 <body>
     <div class="main-div">
-        <div class="fields">fields</div>
-        <div class="auth">
+        
+        <div class="fields">
+                <form action="">
+                <h1>NIRF Rank</h1>
+                Enter NIRF rank :<input type="text" required>
+                <button type="submit" >Submit</button>
+            </form>
+            </div>
+        <!-- <div class="auth">
             <div class="Prediction">predict</div>
             <div class="Updation"><a href="/login">update</a></div>
             <div class=""></div>
-        </div>
+        </div> -->
+        <!-- <div class="">
+            <table>
+                <thead>
+                    <tr style="display: flex; gap: 8rem;">
+                        <th>TLR</th>
+                        <th>RPC</th>
+                        <th>GO</th>
+                        <th>OI</th>
+                        <th>Preception</th>
+                        <th style="align-items: end;">Date</th>
+                    </tr>
+                    
+                </thead>
+    
+                <tbody>
+                    <tr style="display: flex; gap: 5rem;">
+                        <td>1</td>
+                        <th>abc</th>
+                        <th>def</th>
+                        <th>ghi</th>
+                    </tr> -->
+                    <!-- {% for todo in alltodo %}
+                    <tr style="display: flex; gap: 5rem;">
+                        <td>1</td>
+                        <th>abc</th>
+                        <th>def</th>
+                        <th>ghi</th>
+                    </tr>
+                        
+                    {% endfor %} -->
+                <!-- </tbody>
+                </table>
+        </div> -->
+        <div style="width: 70%;">
+          
+            <table style="width: 100%;" >
+                <!-- <tr>
+                    <th>74</th>
+                    <th>78</th>
+                    <th>78</th>
+                    <th>11</th>
+                    <th>1</th>
+                </tr> -->
+              <tr>
+                <td>TLR</td>
+                <td>74</td>
+              </tr>
+              <tr>
+                <td>RPC</td>
+                <td>78</td>
+              </tr>
+              <tr>
+                <td>GO</td>
+                <td>79</td>
+              </tr>
+              <tr>
+                <td>OI</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>Preception</td>
+                <td>88</td>
+              </tr>
+            </table>
+          </div>
+          <div class="improvements">
+            <h1>IMPROVEMENTS:</h1>
+            <div class="tlr-improve">
+                <h3>TLR Improvement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus sed inventore id.</p>
+            </div>
+            <div class="tlr-improve">
+                <h3>RPC Improvement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus sed inventore id.</p>
+            </div>
+            <div class="tlr-improve">
+                <h3>GO Improvement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus sed inventore id.</p>
+            </div>
+            <div class="tlr-improve">
+                <h3>OI Improvement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus sed inventore id.</p>
+            </div>
+            <div class="tlr-improve">
+                <h3>Preception Improvement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus sed inventore id.</p>
+            </div>
+          </div>
     </div>
 </body>
 </html>
